@@ -16,7 +16,7 @@ RUN git clone https://github.com/rapid7/metasploit-framework /opt/metasploit-fra
 WORKDIR /opt/metasploit-framework
 
 # Instala as gems necessárias
-RUN gem install bundler && bundle install
+RUN gem install bundler -v 2.4.22 && bundle _2.4.22_ install
 
 # Copia arquivos personalizados para dentro do container
 COPY entrypoint.sh /entrypoint.sh
