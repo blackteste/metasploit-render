@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: metasploit-render
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars: []
+    ports:
+      - 4444
+
